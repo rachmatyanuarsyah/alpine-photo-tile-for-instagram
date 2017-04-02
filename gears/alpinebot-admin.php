@@ -879,7 +879,8 @@ class PhotoTileForInstagramAdmin extends PhotoTileForInstagramAdminSecondary{
           + '?redirect_uri=' + encodeURIComponent("<?php echo $redirect; ?>")
           + '&response_type=code'
           + '&client_id=<?php echo $_POST['client_id']; ?>'
-          + '&display=touch';
+          + '&display=touch'
+	  + '&scope=public_content';
 
           window.location.replace(url);
        </script>
